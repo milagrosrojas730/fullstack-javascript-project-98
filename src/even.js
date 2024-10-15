@@ -1,11 +1,11 @@
-#!/usr/bin/env node
-
 import readlineSync from 'readline-sync';
+import chalk from 'chalk';
+import greetUser from './cli.js';
 
 const isEven = (num) => num % 2 === 0;
 const play = () => {
     console.log('¡Bienvenido a Brain Games!');
-    const useName = getUserName();
+    const useName = greetUser();
     console.log(`¡Hola, ${useName}!`);
     console.log('Responde "yes" si el número es par, de lo contrario responde "no".');
 const round = 3;
@@ -15,19 +15,19 @@ const round = 3;
         const useAnswer = readlineSync.question('Tu respuesta: ').toLowerCase();
         const correctAnswer = isEven(randNum) ? 'yes' : 'no';
         if (useAnswer !== 'yes' && useAnswer !== 'no') { 
-            console.log(`'${useAnswer}' es una respuesta incorrecta ;(. La respuesta correcta era '${correctAnswer}'.`);
+            console.log(chalk.red(`'${useAnswer}' es una respuesta incorrecta ;(. La respuesta correcta era '${correctAnswer}'.`));
             console.log(`¡Intentemoslo de nuevo, ${useName}!`);
             return;
         }
         if (useAnswer === correctAnswer){
-            console.log('¡Correcto!');
+            console.log(chalk.green('¡Correcto!'));
         } else {
-            console.log(`'${useAnswer}' es una respuesta incorrecta ;(. La respuesta correcta era '${correctAnswer}'.`);
+            console.log(chalk.red(`'${useAnswer}' es una respuesta incorrecta ;(. La respuesta correcta era '${correctAnswer}'.`));
             console.log(`¡Intentemoslo de nuevo, ${useName}!`);
             return;
         }
     }
-    console.log();
+    console.log(chalk.magenta(`¡Felicidades, ${useName}!`));
 };
 
-export default play();
+export default play;
