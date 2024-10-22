@@ -15,14 +15,14 @@ const round = 3;
         const useAnswer = readlineSync.question('Tu respuesta: ').toLowerCase();
         const correctAnswer = isEven(randNum) ? 'yes' : 'no';
         if (useAnswer !== 'yes' && useAnswer !== 'no') { 
-            console.log(chalk.red(`'${useAnswer}' es una respuesta incorrecta ;(. La respuesta correcta era '${correctAnswer}'.`));
+            console.log(chalk.red(`'${useAnswer}' es una respuesta incorrecta. La respuesta correcta era '${correctAnswer}'.`));
             console.log(`¡Intentemoslo de nuevo, ${useName}!`);
             return;
         }
         if (useAnswer === correctAnswer){
             console.log(chalk.green('¡Correcto!'));
         } else {
-            console.log(chalk.red(`'${useAnswer}' es una respuesta incorrecta ;(. La respuesta correcta era '${correctAnswer}'.`));
+            console.log(chalk.red(`'${useAnswer}' es una respuesta incorrecta. La respuesta correcta era '${correctAnswer}'.`));
             console.log(`¡Intentemoslo de nuevo, ${useName}!`);
             return;
         }

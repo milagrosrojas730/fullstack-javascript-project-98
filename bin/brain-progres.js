@@ -1,5 +1,4 @@
 #!/usr/bin/env node
+import play from "../src/progres.js";
 
-import readlineSync from 'readline-sync';
-import { greetUser } from '../src/even.js'; // Import greetUser
-
+play ();
