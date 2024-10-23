@@ -33,7 +33,7 @@ const play = () => {
         if (useAnswer === correctAnswer) {
             console.log('¡Correcto!');
         } else {
-            console.log(`'${useAnswer}' es una respuesta incorrecta. La respuesta correcta era '${correctAnswer}'.`);
+            console.log(`'${useAnswer}' es una respuesta incorrecta ;(. La respuesta correcta era '${correctAnswer}'.`);
             console.log(`¡Intentémoslo de nuevo, ${userName}!`);
             return;
         }
