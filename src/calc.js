@@ -16,8 +16,8 @@ const calculate = (n1, n2, operation) => {
     }
 };
 const play = () => {
-    const userName = greetUser();
-    console.log('¿Cuál es el resultado de la expresión?');
+ //   const userName = greetUser();
+ //   console.log('¿Cuál es el resultado de la expresión?');
 
     const round = 3;
     for (let i=0; i < round; i++) {
