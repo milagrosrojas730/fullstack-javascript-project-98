@@ -1,8 +1,8 @@
 import readlineSync from 'readline-sync';
 import greetUser from './cli.js';
 
-const operation = ['+', '-', '*'];
-const randomOperation = () => operation[Math.floor(Math.random() * operation.length)];
+const operations = ['+', '-', '*'];
+const randomOperation = () => operations[Math.floor(Math.random() * operations.length)];
 const calculate = (n1, n2, operation) => {
     switch (operation) {
         case '+':
