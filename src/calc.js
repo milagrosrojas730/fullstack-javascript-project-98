@@ -16,7 +16,7 @@ const calculate = (n1, n2, operator) => {
     }
 };
 const play = () => {
-console.log('¡Bienvenido a Brain Games!');
+
 const userName = greetUser();
 console.log('¿Cuál es el resultado de la expresión?');
 
