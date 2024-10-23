@@ -18,7 +18,6 @@ const calculate = (n1, n2, operation) => {
 const play = () => {
     console.log('¡Bienvenido a Brain Games!');
     const userName = greetUser();
-    console.log(`¡Hola, ${userName}!`);
     console.log('¿Cuál es el resultado de la expresión?');
 
     const round = 3;
