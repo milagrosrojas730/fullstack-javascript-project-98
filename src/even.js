@@ -16,14 +16,14 @@ const round = 3;
         const correctAnswer = isEven(randNum) ? 'yes' : 'no';
         if (useAnswer !== 'yes' && useAnswer !== 'no') { 
             console.log(chalk.red(`'${useAnswer}' es una respuesta incorrecta. La respuesta correcta era '${correctAnswer}'.`));
-            console.log(`¡Intentemoslo de nuevo, ${useName}!`);
+            console.log(`¡Intentémoslo de nuevo, ${useName}!`);
             return;
         }
         if (useAnswer === correctAnswer){
             console.log(chalk.green('¡Correcto!'));
         } else {
             console.log(chalk.red(`'${useAnswer}' es una respuesta incorrecta. La respuesta correcta era '${correctAnswer}'.`));
-            console.log(`¡Intentemoslo de nuevo, ${useName}!`);
+            console.log(`¡Intentémoslo de nuevo, ${useName}!`);
             return;
         }
     }
