@@ -4,6 +4,7 @@ import greetUser from './cli.js';
 const prime = (num) => num > 1 && ![... Array(num).keys()].slice(2).some(i => num % i === 0);
 
 const play = () => {
+    console.log('¡Bienvenido a Brain Games!');
     const userName = greetUser();
     console.log('Responde "yes" si el número es primo. De lo contrario, responde "no".');
 
