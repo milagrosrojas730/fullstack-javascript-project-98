@@ -16,8 +16,10 @@ const calculate = (n1, n2, operator) => {
     }
 };
 const play = () => {
-
-const userName = greetUser();
+    console.log('¡Bienvenido a Brain Games!');
+    const useName = greetUser();
+    console.log(`¡Hola, ${useName}!`);
+//const userName = greetUser();
 console.log('¿Cuál es el resultado de la expresión?');
 
     const round = 3;
