@@ -12,7 +12,7 @@ const calculate = (n1, n2, operator) => {
         case '*':
             return n1 * n2;
         default: 
-            throw new Error(`Operación Desconocida: $(operator)`);
+            throw new Error(`Operación Desconocida: ${operator}`);
     }
 };
 const play = () => {
