@@ -18,7 +18,7 @@ const play = () => {
     
     const round = 3;
 
-    for (let i = 0; i < round; i++) {
+    for (let i = 0; i < round; i+=1) {
         const n1 = Math.floor(Math.random() * 100) + 1;
         const n2 = Math.floor(Math.random() * 100) + 1;
 
@@ -28,7 +28,7 @@ const play = () => {
         if (userAnswer === correctAnswer) {
             console.log('¡Correcto!');
         } else {
-            console.log(`'${userAnswer}' es una respuesta incorrecta. La respuesta correcta era '${correctAnswer}'.`);
+            console.log(`'${userAnswer}' es una respuesta incorrecta ;(. La respuesta correcta era '${correctAnswer}'.`);
             console.log(`¡Intentémoslo de nuevo, ${userName}!`);
             return;
         }

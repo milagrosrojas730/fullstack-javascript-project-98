@@ -17,7 +17,7 @@ const play = () => {
 
     const round = 3;
 
-    for (let i = 0; i < round; i++) {
+    for (let i = 0; i < round; i+=1) {
         const start = Math.floor(Math.random() * 10);
         const step = Math.floor(Math.random() * 5) + 1;
         const length = 10;

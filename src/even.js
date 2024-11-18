@@ -9,7 +9,7 @@ const play = () => {
     console.log(`¡Hola, ${useName}!`);
     console.log('Responde "yes" si el número es par, de lo contrario responde "no".');
 const round = 3;
-    for (let i=0; i < round; i++) {
+    for (let i=0; i < round; i+=1) {
         const randNum = Math.floor(Math.random() * 100);
         console.log(`Pregunta: ${randNum}`);
         const useAnswer = readlineSync.question('Tu respuesta: ').toLowerCase();
