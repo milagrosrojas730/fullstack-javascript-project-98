@@ -21,8 +21,9 @@ const play = () => {
 
     if (userAnswer === correctAnswer) 
       console.log('¡Correcto!');
-    else return 
+    else 
     console.log(`'${userAnswer}' es incorrecto. La respuesta correcta era '${correctAnswer}'. ¡Intentémoslo de nuevo, ${userName}!`);
+    return;
     }
   console.log(`¡Felicidades, ${userName}!`);
 }
