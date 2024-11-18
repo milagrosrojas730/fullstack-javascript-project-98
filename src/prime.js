@@ -6,7 +6,7 @@ const prime = (num) => num > 1 && ![... Array(num).keys()].slice(2).some(i => nu
 const play = () => {
     console.log('¡Bienvenido a Brain Games!');
     const userName = greetUser();
-    console.log('Responde "yes" si el número es primo. De lo contrario, responde "no".');
+    console.log('Responde "yes" si el número dado es primo. De lo contrario, responde "no".');
 
     for (let i = 0; i < 3; i++) {
         const num = Math.floor(Math.random() * 100) + 1;
