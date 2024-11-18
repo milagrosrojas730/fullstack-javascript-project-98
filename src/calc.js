@@ -3,6 +3,7 @@ import greetUser from './cli.js';
 
 const operations = ['+', '-', '*'];
 const randomOperation = () => operations[Math.floor(Math.random() * operations.length)];
+
 const calculate = (n1, n2, operator) => {
     switch (operator) {
         case '+':
@@ -16,7 +17,9 @@ const calculate = (n1, n2, operator) => {
     }
 };
 const play = () => {
+
 const userName = greetUser();
+
 console.log('¿Cuál es el resultado de la expresión?');
 
     const round = 3;
