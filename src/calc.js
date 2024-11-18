@@ -39,5 +39,4 @@ console.log('¿Cuál es el resultado de la expresión?');
     }
     console.log(`¡Felicidades, ${userName}!`);
 };
-
 export default play;
