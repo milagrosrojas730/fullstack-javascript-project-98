@@ -3,7 +3,7 @@ import greetUser from './cli.js';
 
 const prime = (num) => {
   if (num <= 2) return false;
-  for (let i = 2; i <= Math.sqrt(num); i+=1) {
+  for (let i = 2; i <= Math.sqrt(num); i += 1) {
     if (num % i === 0) return false;
   }
   return true;
@@ -21,13 +21,13 @@ const play = () => {
 
     if (userAnswer === correctAnswer) {
       console.log('¡Correcto!');
-    }else{ 
+    } else { 
     console.log(`'${userAnswer}' es incorrecto. La respuesta correcta era '${correctAnswer}'`);
     console.log(`¡Intentémoslo de nuevo, ${userName}!`);
     return;
     }
-    }
+  }
   console.log(`¡Felicidades, ${userName}!`);
-}
+};
 
 export default play;

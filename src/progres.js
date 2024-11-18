@@ -4,7 +4,7 @@ import greetUser from './cli.js';
 const generateProgression = (start, step, length) => {
     if (length <= 0) throw new Error('La longitud de la progresión debe ser mayor que 0');
     const progression = [];
-    for (let i = 0; i < length; i+= 1) {
+    for (let i = 0; i < length; i += 1) {
         progression.push(start + i * step);
     }
     return progression;

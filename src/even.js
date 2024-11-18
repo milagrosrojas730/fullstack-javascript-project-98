@@ -12,19 +12,20 @@ const play = () => {
 
 const round = 3;
 
-    for (let i=0; i < round; i+=1) {
+    for (let i = 0; i < round; i += 1) {
         const randNum = Math.floor(Math.random() * 100);
         console.log(chalk.cyan(`Pregunta: ${randNum}`));
 
-        let useAnswer = readlineSync.question('Tu respuesta: ').toLowerCase();
+        const useAnswer = readlineSync.question('Tu respuesta: ').toLowerCase();
         const correctAnswer = isEven(randNum) ? 'yes' : 'no';
 
         if (useAnswer !== 'yes' && useAnswer !== 'no') { 
             console.log(chalk.red(`"${useAnswer}" no es una respuesta válida. Intenta nuevamente.`));
             console.log(`¡Intentémoslo de nuevo, ${userName}!`);
             i -= 1;
-            continue;
+            return;
         }
+
         if (useAnswer === correctAnswer){
             console.log(chalk.green('¡Correcto!'));
         } else {
