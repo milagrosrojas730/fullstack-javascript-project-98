@@ -17,19 +17,15 @@ const calculate = (n1, n2, operator) => {
     }
 };
 const play = () => {
-
 const userName = greetUser();
-
 console.log('¿Cuál es el resultado de la expresión?');
-
     const round = 3;
     for (let i=0; i < round; i++) {
         const n1 = Math.floor(Math.random() * 100);
         const n2 = Math.floor(Math.random() * 100);
         const operator = randomOperation();
-
         const correctAnswer = calculate(n1, n2, operator).toString();
-        
+
         console.log(`Pregunta: ${n1} ${operator} ${n2}`);
         const userAnswer = readlineSync.question('Tu respuesta: ');
 
