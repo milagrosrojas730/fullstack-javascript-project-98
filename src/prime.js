@@ -5,12 +5,12 @@ const prime = (num) => {
     if (num <= 2) {
       return false;
     }
-for (let i = 2; i <= Math.sqrt(num); i += 1) {
-    if (num % i === 0) {
-      return false;
+    for (let i = 2; i <= Math.sqrt(num); i += 1) {
+        if (num % i === 0) {
+            return false;
+        }
     }
-  }
-  return true;
+    return true;
 };
 
 const play = () => {
@@ -23,14 +23,14 @@ const play = () => {
     const correctAnswer = prime(num) ? 'yes' : 'no';
     const userAnswer = readlineSync.question(`Pregunta: ${num}  .Tu respuesta: `).toLowerCase();
 
-  if (userAnswer === correctAnswer) {
-    console.log('¡Correcto!');
+  if (userAnswer !== 'yes' && userAnswer !== 'no') {
+      console.log('¡Correcto!');
   } else {
-    console.log(`'${userAnswer}' es incorrecto. La respuesta correcta era '${correctAnswer}'`);
-    console.log(`¡Intentémoslo de nuevo, ${userName}!`);
-  return;
-        }
+      console.log(`'${userAnswer}' es incorrecto. La respuesta correcta era '${correctAnswer}'`);
+      console.log(`¡Intentémoslo de nuevo, ${userName}!`);
+      return;
     }
+  }
   console.log(`¡Felicidades, ${userName}!`);
 };
 
