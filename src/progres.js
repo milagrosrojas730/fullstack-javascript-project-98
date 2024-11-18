@@ -22,7 +22,7 @@ const play = () => {
         const start = Math.floor(Math.random() * 10);
         const step = Math.floor(Math.random() * 5) + 1;
         const length = 10;
-        const progres = generateProgression(start, step, length);
+        const progression = generateProgression(start, step, length);
 
         const hiddenIndex = Math.floor(Math.random() * length);
         const correctAnswer = progression[hiddenIndex].toString();
