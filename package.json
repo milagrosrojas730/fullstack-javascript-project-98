@@ -34,12 +34,5 @@
     "eslint": "^9.12.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-import": "2.31.0"
-  },
-  "rules": {
-    "indent": ["error", 2],
-    "no-trailing-spaces": "error",
-    "eol-last": ["error", "always"],
-    "space-infix-ops": "error",
-    "no-plusplus": "off"
   }
 }
