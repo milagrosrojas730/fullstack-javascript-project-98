@@ -10,21 +10,21 @@ const prime = (num) => {
 };
 
 const play = () => {
-    console.log('¡Bienvenido a Brain Games!');
-    const userName = greetUser();
-    console.log('Responde "yes" si el número dado es primo. De lo contrario, responde "no".');
+  console.log('¡Bienvenido a Brain Games!');
+  const userName = greetUser();
+  console.log('Responde "yes" si el número dado es primo. De lo contrario, responde "no".');
 
-    for (let i = 0; i < 3; i += 1) {
-        const num = Math.floor(Math.random() * 100);
-        const correctAnswer = prime(num) ? 'yes' : 'no';
-        const userAnswer = readlineSync.question(`Pregunta: ${num}  .Tu respuesta: `).toLowerCase();
+for (let i = 0; i < 3; i += 1) {
+    const num = Math.floor(Math.random() * 100);
+    const correctAnswer = prime(num) ? 'yes' : 'no';
+    const userAnswer = readlineSync.question(`Pregunta: ${num}  .Tu respuesta: `).toLowerCase();
 
-    if (userAnswer === correctAnswer) {
-      console.log('¡Correcto!');
-    } else { 
+if (userAnswer === correctAnswer) {
+    console.log('¡Correcto!');
+} else {
     console.log(`'${userAnswer}' es incorrecto. La respuesta correcta era '${correctAnswer}'`);
     console.log(`¡Intentémoslo de nuevo, ${userName}!`);
-    return;
+return;
     }
   }
   console.log(`¡Felicidades, ${userName}!`);
