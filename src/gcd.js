@@ -29,7 +29,7 @@ const play = () => {
             console.log('¡Correcto!');
         } else {
             console.log(`'${userAnswer}' es una respuesta incorrecta. La respuesta correcta era '${correctAnswer}'.`);
-            console.log(`¡Intentésmoslo de nuevo, ${userName}!`);
+            console.log(`¡Intentémoslo de nuevo, ${userName}!`);
             return;
         }
     }
