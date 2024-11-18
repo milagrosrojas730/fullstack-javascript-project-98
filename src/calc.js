@@ -20,7 +20,7 @@ const play = () => {
 const userName = greetUser();
 console.log('¿Cuál es el resultado de la expresión?');
     const round = 3;
-    for (let i=0; i < round; i++) {
+    for (let i=0; i < round; i+=1) {
         const n1 = Math.floor(Math.random() * 100);
         const n2 = Math.floor(Math.random() * 100);
         const operator = randomOperation();

@@ -18,7 +18,7 @@ const play = () => {
     
     const round = 3;
 
-    for (let i = 0; i < round; i+=1) {
+    for (let i = 0; i < round; i += 1) {
         const n1 = Math.floor(Math.random() * 100) + 1;
         const n2 = Math.floor(Math.random() * 100) + 1;
 
